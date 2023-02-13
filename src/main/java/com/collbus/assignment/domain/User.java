@@ -1,8 +1,6 @@
 package com.collbus.assignment.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class User {
@@ -12,7 +10,9 @@ public class User {
     private Long id;
 
     private String nickname;
-    private String account_type;
+
+    @Enumerated(EnumType.STRING)
+    private AccountType account_type;
     private int account_id;
     private Boolean quit;
 
