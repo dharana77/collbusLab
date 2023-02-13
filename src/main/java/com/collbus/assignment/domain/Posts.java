@@ -20,5 +20,9 @@ public class Posts {
     @Column(name = "account_type")
     private String accountType;
 
+    @Column(name = "created_user_id")
     private Long createdUserId;
+
+    @Column(name = "likes_count")
+    private int likesCount;
 }
