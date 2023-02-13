@@ -24,5 +24,5 @@ public class Posts {
     private Long createdUserId;
 
     @Column(name = "likes_count")
-    private int likesCount;
+    private Long likesCount;
 }
