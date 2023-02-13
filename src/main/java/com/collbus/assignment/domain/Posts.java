@@ -17,4 +17,7 @@ public class Posts {
     @JoinColumn(name = "post_id")
     private List<Likes> likes;
 
+    @Column(name = "account_type")
+    private String accountType;
+
 }
