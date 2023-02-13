@@ -1,6 +1,7 @@
 package com.collbus.assignment.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Posts {
@@ -11,5 +12,9 @@ public class Posts {
 
     private String title;
     private String content;
+
+    @OneToMany(cascade =  CascadeType.ALL, fetch= FetchType.LAZY)
+    @JoinColumn(name = "post_id")
+    private List<Likes> likes;
 
 }
