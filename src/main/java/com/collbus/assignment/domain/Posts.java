@@ -20,4 +20,5 @@ public class Posts {
     @Column(name = "account_type")
     private String accountType;
 
+    private Long createdUserId;
 }
